@@ -1,0 +1,21 @@
+
+{% extends "intern/base.html" %}
+{% block content %}
+    <legend class="border-bottom mb-4">
+        Assigned Tasks!
+    </legend>
+    <div >
+        {% if files %}
+                {% for file in files %}
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Title: {{file.title}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{file.desc}}</h5>
+                    <p class="card-text">Intern/Volunteer: {{file.intern.username}}</p>
+                    <p class="card-text"><a href="{% url 'setTask'  pk=file.pk name=file.intern.username %}">View Progress</a></p>
+                </div>
+            </div>
+                {% endfor %}
+        {% endif %}
+    </div>
+    {%endblock%}

@@ -1,0 +1,41 @@
+
+{% extends "intern/base.html" %}
+{% block content %}
+    <legend class="border-bottom mb-4">
+        Your Tasks!
+    </legend>
+    <div >
+        {% if files %}
+                {% for file in files %}
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">{{file.pk}}.{{file.title}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{file.desc}}</h5>
+                    {%if file.file%}
+                    <p class="card-text">File Link:<a href='{{file.file.url}}'> File </a></p>
+                    {% endif %}
+                  
+                
+                
+                    {% if file.isComplete %}
+                    <p class='card-text'>Status: Completed!</p>
+                    {%else%}
+                    <form  method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <!-- <p>{{ form.non_field_errors }}</p> -->
+                        <!-- <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p> -->
+                        <p>
+                            {{ form.docfile.errors }}
+                            {{ form.docfile }}
+                        </p>
+                        <input type="hidden" value="{{file.pk}}"  name="key"/>
+                        <p><input type="submit" value="Upload" /></p>
+                    </form>
+                    {%endif%}
+                    <h5 class="card-title">Comments:{{file.comments}}</h5>
+                </div>
+            </div>
+                {% endfor %}
+        {% endif %}
+    </div>
+    {%endblock%}

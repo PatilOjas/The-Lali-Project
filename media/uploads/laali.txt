@@ -1,0 +1,117 @@
+q)interns and volunteers role?
+multiple events are planned by LAALI, 
+iterns required for such projects(like planning currciculum)
+not directly onvolved in fellowship
+newletters,media,conducting webinars,media roles
+
+q)who is responsible for onboarding mentees
+program manager->mentors->mentees
+
+q)who will create assignments
+created by collaborators, different organizations collabaorating with LAALI
+sessions are taken by partner organizations, mentors should be able to know how much students understood
+
+q)program manager and mentors viewing same data
+mentees progress=viewed by everyone
+mentors progress-program manager
+program managers can give assignments to mentors
+
+q)features of admin/program manager?
+dashboard:peformance of mentors,iterns,mentees(only for admin)
+whole organizational dashboard only for admin
+
+q)format of assignments being assigned to mentees?
+mostly mcqs, descriptive questions, eg- generder sensitization create memes for awarness
+project based assignments also possible
+
+q)assignment allocation?
+organization can send assignments directly to mentees or mentors
+
+q)mentors giving feedback?
+sessions for fellows(reproductive health,sexual reproduction,menstruation)
+mentors will be having sessions with program managers for enhancing leaderships
+mentors can give feedback of the sessions the mentees are attending
+
+**2 sessions mentors attend:one with mentees(14-18 age group, taken by partner organizations)
+mentor gives feedback about the sessions(taken properly or not)
+second session:coacing skills given by admin team on leadership, feedback on these session
+
+q)marking attendance?
+students mark attendance after the session completes,
+while exiting they can fill the attendance form
+
+q)one mentor-5 students(max 5 students min 3 students) (6 months)
+
+q)how sessions are taken?
+mode:(sync)zoom,(async)(whatsapp discussions)
+
+fellows grades are visible to mentors(not students) 
+
+students ar ebeing coached by mentors, mentors are being coached by program managers
+interns and volunteers=research,design,marketing,branding
+
+q)data analytics?
+visualize the data and display in dashbaord
+user engagement,feedback,objective assessments,completion of assignments,attendance/engagement
+
+interns will be part of system.
+INTERNS AND VOLUNTEERS AS DIFFERENT USERS
+STUDENTS HAVE ANDROID PHONE
+
+mentors are assignmend by program managers
+assessment of mentors/judging:(rubric)
+whether able to move students? 
+
+MENTEES CAN SEE FELLOW MENTEES AND SESSIONS
+
+PARTNER ORGANIZATION HAS ACCESS TO APPLICATION:
+
+
+
+
+**WHO WILL MONITOR INTERNS?
+CORE TEAM(LAALI)
+**ALL STUDENTS WILL HAVE 6 MONTH PROGRAM?
+YES STUDENTS AND MENTORS WILL BE THERE FOR 6 MONTHS
+
+Q)queries of students are answered by whom?
+partner organization,mentors
+
+ALL MENTEES CAN SEE EACH OTHER QUERIES
+
+Q)hiw are students/mentors selected?
+applications submitted by students/mentors(not necessary)
+
+organization(LAALI) will assign fellows to fellow mentors
+
+ASSUME MENTORS AND MENTEES HAVE LOGIN CREDENTIALS
+
+q)grading system for students?
+depends on partner org and mentors,
+understanding, evaluating the situations,
+
+q)will mentors get assignments?
+yes mentors can get them from project managers, based on how they are dealing with their students
+
+q)who will be grading the students?
+mentors and partner organizations both on different criteria
+
+assignments are set by partner organizations
+
+discussion forum for queries(mentee->mentor, mentor->manager)
+
+students:name, PHONE NUMBER, EMAIL ID
+
+4 DIFFERENT TRACKS, PARTNER ORG FOR EACH TRACK AND SESSIONS ON THESE TRACKS
+
+languages: MULTILINGUAL
+
+students can give feedback to partner organization about mentors
+
+we can use JEERA for iterns and admin
+
+
+
+
+
+

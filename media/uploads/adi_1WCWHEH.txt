@@ -1,0 +1,15 @@
+1)write units
+2)take lcm properly
+3)silly mistake-4
+4)time management
+
+sir-26th question,33,34,36,6,11
+
+
+3,6,7,912,14,18
+
+hashing-theory
+hmac and mac
+last 3 modules-theory based questions
+first 4 modules-problem based
+algo and formula(ecc)

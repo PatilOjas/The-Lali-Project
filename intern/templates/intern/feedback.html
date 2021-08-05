@@ -1,0 +1,36 @@
+{% extends 'intern/base.html' %}
+{%block content%}
+<div>
+    <legend class="border-bottom mb-4">
+        Session feedback from students
+    </legend>
+    <div><canvas id="myChart" width="600" height="400" ></canvas></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script >
+var ctx = document.getElementById('myChart').getContext('2d');
+var config={
+    type: 'doughnut',
+    data: {
+        labels: ['Positive', 'Negative','Neutral'],
+        datasets: [{
+            label: '# of student response',
+            data: [{{positive}}, {{negative}},{{neutral}}],
+            backgroundColor: [
+                '#7C83FD',
+                '#9B72AA',
+                '#96BAFF',
+            ]
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+};
+var myChart = new Chart(ctx,config );
+</script>
+</div>
+{%endblock%}

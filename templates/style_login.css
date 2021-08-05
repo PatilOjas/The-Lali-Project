@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+/* ############### HTML Styling ################ */
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+/* ############ Header styling ################# */
+header{
+	background: #222222;
+	height: 10%;
+}
+
+
+
+/* ############# Login Content ################ */
+
+.login-div{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./imgs/login_bg_img.jpg");
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+
+.width-setter{
+	position: relative;
+	width: 30%;
+	margin: 3% 35%;
+}
+
+.login-div .width-setter .white-tile{
+	background: white;
+	position: relative;
+	border-radius: 10%;
+	margin-top: 15%;
+	height: 40em;
+}
+
+.login-div h1{
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 0.3rem;
+}
+
+i{
+	margin-left: 10%;
+}
+
+#username{
+	border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+	height: 2rem;
+	font-size: 2rem;
+	margin-top: 20%;
+	margin-left: 4%;
+}
+
+#password{
+	border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+	height: 2rem;
+	font-size: 2rem;
+	margin-left: 4%;
+}
+
+.separator{
+	margin: 3em;
+	border: 0.5px solid #c4b9b7;
+	background: #c4b9b7;
+}
+
+.login-btn{
+	display: inline-block;
+	position: absolute;
+	top: 80%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn{
+	text-decoration: none;
+	padding: 0.5em 1.5em;
+	border-radius: 10em;
+	background-image: linear-gradient(109.6deg, rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+@media screen and (max-width:768px){
+	.width-setter{
+		width: 60%;
+		margin: 3% 20%;
+	}
+	input{
+		margin: 5px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.form-div{
+		width: 50rem;
+		height: 60%;
+		margin: 15% 20%;
+	}
+
+	input, label{
+		font-size: 2rem;
+	}
+}

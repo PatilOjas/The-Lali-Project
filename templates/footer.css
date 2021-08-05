@@ -1,0 +1,92 @@
+/* ############### HTML Styling ################ */
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+footer{
+	/* background: #292726; */	
+	background: linear-gradient(rgba(255,255,255, 0.1), rgba(0,0,0, 0.8)), url(https://images.unsplash.com/photo-1620588274861-a4bbf3378f65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.img-div {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-left: 5rem;
+	flex-grow: 3;
+}
+
+.icons{
+	display: flex;
+	
+	flex-grow: 1;
+}
+
+.copyright-div{
+	display: flex;	
+	height: 2rem;
+	position: relative;
+	flex-direction: row;
+	/* align-content: flex-end; */
+	flex-grow: 3;
+	color: white;
+	padding-top: 7em;	
+}
+
+.copyright-txt{
+	text-align: center;
+	align-self: center;
+}
+
+.moreinfo-links{
+	display: inline;
+	width: 25%;
+	height: 2rem;
+	flex-grow: 1;
+}
+
+.footer-anchor{
+	margin-left: 3rem;
+	align-self: center;
+	display: inline-block;
+	flex-direction: column;
+	text-decoration: none;
+	color: #fc0366;
+}
+
+
+/* ################## Media Query ########################## */
+@media screen and (max-width:768px) {
+	footer{
+		width: 100vw;
+		flex-direction: column;
+		box-sizing: none;
+		height: 50vh;
+	}
+
+	.img-div{
+		padding-left: 0;
+		
+	}
+	.copyright-div{
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.copyright-txt{
+		top: 60px;
+		flex-grow: 1;
+		text-align: center;
+		align-self: center;
+	}
+}

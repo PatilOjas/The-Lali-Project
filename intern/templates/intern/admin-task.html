@@ -1,0 +1,59 @@
+{% extends "intern/base.html" %}
+{% block content%}
+<div class="content-section">
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+    <div class="card-header">{{task.title}}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{task.desc}}</h5>
+      {% if task.file %}
+      <p class="card-text"><a href="{{task.file.url}}">View Work</a></p>
+      {% else %}
+      <p class="card-text">No Uploaded work!</p>
+      {% endif %}
+    </div>
+  </div>
+  <form method="POST">
+    {% csrf_token %}
+  <div class="form-check">
+    <legend class="border-bottom mb-4">
+        Make changes to the tasks:
+    </legend>
+    {{form.as_p}}
+  <button type="submit" class="btn btn-info">Change</button>
+  </form>
+  <legend class="border-bottom mb-4">
+    Performance of intern in completion of tasks:
+</legend>
+  <div><canvas id="myChart" width="600" height="400" ></canvas></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script >
+var ctx = document.getElementById('myChart').getContext('2d');
+var config={
+    type: 'doughnut',
+    data: {
+        labels: ['Completed', 'Pending',],
+        datasets: [{
+            label: '# of Calories',
+            data: [{{complete}}, {{pending}}],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ]
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+};
+var myChart = new Chart(ctx,config );
+</script>
+</div>
+{% endblock %}

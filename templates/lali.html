@@ -1,0 +1,137 @@
+<!--Header FOOTER CAROUSEL-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .carousel-slide
+    {
+        width: 700px;
+        height: 300px;
+
+    }
+</style>
+
+<body class="translate">
+  <div id="mainListDiv" class="main_list translate">
+    <ul class="navlinks">
+      
+      <div id="google_translate_element" class = 'translator-div'></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <section class="home">
+      </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The Laali Project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'register' %}">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'login' %}">LogIn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://milaap.org/fundraisers/support-women-of-india">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.linkedin.com/company/the-laaliproject/?originalSubdomain=in">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+            <img src="data:image/jpeg;base64,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" class="img-rounded" alt="Cinque Terre">
+
+      <!--
+      <div id="carouselExampleCaptions" class="carousel-slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://image.shutterstock.com/image-photo/regular-menstrual-cycle-tampons-womens-260nw-1199606458.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.shutterstock.com/image-photo/regular-menstrual-cycle-tampons-womens-260nw-1199606458.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.shutterstock.com/image-photo/regular-menstrual-cycle-tampons-womens-260nw-1199606458.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      -->
+
+      <footer class="page-footer" style="background-color: #B2EBF2;">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-4 mt-4">
+                    <p> Become a menstrual health champion and provide your support financially as well as helping us reach a wider audience.
+                        <br>
+                        Donate how much you are comfortable with.
+                        <br>
+                        Spread this campaign across your family, friends, colleagues and acquaintances and urge them to be part of this campaign.</p>
+                </div>
+                <div  class="col-md-4 mt-4">
+                    <h3>Mission</h3>
+                    <ul>
+                        <li>Awareness</li>
+                        <li>Accessibilty</li>
+                        <li>Availability</li>
+                        <li>Affordability</li>
+                        <li>Acceptibilty</li>
+                        <li>Quality</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Address:Nearest you, state, country</li>
+                        <li>admin@gmail.com</li>
+                        <li>1234456778</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">
+                <p>0 2021 CopyRight: TheLaaliProject.com</p>
+            </div>
+        </div>
+</body>
+</html>
